@@ -11,18 +11,18 @@ export class UpdateTodoInput {
   @IsNotEmpty()
   @IsOptional()
   @IsString()
-  @Field(() => Boolean, { description: 'is completed' })
+  @Field(() => Boolean, { description: 'is completed', nullable: true })
   completed: boolean;
 
   @IsNotEmpty()
   @IsOptional()
   @IsString()
-  @Field(() => String, { description: 'Todo title' })
+  @Field(() => String, { description: 'Todo title', nullable: true })
   title: string;
 
   @IsNotEmpty()
   @IsOptional()
   @IsString()
-  @Field(() => String, { description: 'Description of todo' })
+  @Field(() => String, { description: 'Description of todo', nullable: true })
   description: string;
 }

@@ -19,12 +19,12 @@ export class FindTodosQuery {
   @IsNotEmpty()
   @IsOptional()
   @IsNumber()
-  @Field(() => Int, { description: 'Page Number' })
+  @Field(() => Int, { description: 'Page Number', nullable: true })
   page?: number;
 
   @IsNotEmpty()
   @IsOptional()
   @IsNumber()
-  @Field(() => Int, { description: 'Limits per page' })
+  @Field(() => Int, { description: 'Limits per page', nullable: true })
   limit?: number;
 }
