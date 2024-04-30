@@ -26,7 +26,6 @@ package:
   exclude:
     # - node_modules/**
     - test.secrets.json
-    - staging.secrets.json
     - prod.secrets.json
     - .env
     - src
