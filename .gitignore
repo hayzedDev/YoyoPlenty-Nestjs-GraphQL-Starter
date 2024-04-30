@@ -38,3 +38,4 @@ lerna-debug.log*
 secrets.json
 prod.secrets.json
 test.secrets.json
+.serverless
