@@ -18,7 +18,6 @@ dotenv.config();
       introspection: true,
       autoSchemaFile:
         process.env.NODE_ENV === 'test' ? 'schema.gql' : '/tmp/schema.gql',
-      // sortSchema: true,
       transformSchema: (schema) => upperDirectiveTransformer(schema, 'upper'),
       installSubscriptionHandlers: true,
       buildSchemaOptions: {

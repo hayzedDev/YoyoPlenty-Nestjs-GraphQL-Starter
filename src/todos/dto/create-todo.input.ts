@@ -24,7 +24,7 @@ export class FindTodosQuery {
 
   @IsNotEmpty()
   @IsOptional()
-  @IsString()
+  @IsNumber()
   @Field(() => Int, { description: 'Limits per page' })
   limit?: number;
 }
