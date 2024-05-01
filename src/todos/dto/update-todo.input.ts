@@ -1,5 +1,5 @@
 import { InputType, Field } from '@nestjs/graphql';
-import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
+import { IsBoolean, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 @InputType()
 export class UpdateTodoInput {
@@ -10,7 +10,7 @@ export class UpdateTodoInput {
 
   @IsNotEmpty()
   @IsOptional()
-  @IsString()
+  @IsBoolean()
   @Field(() => Boolean, { description: 'is completed', nullable: true })
   completed: boolean;
 
